@@ -20,26 +20,36 @@ gem "lita-remember"
 
 Lita can remember, forget, search, and list terms and definitions.
 
+### Lita can remember terms:
 ```
-# Lita can remember terms:
 [You]: Lita, remember May 4th is Star Wars Day
 [Lita]: OK, I'll remember May 4th is Star Wars Day
-# Lita can recall terms:
+```
+### Lita can recall terms:
+```
 [You]: Lita, what is May 4th?
 [Lita]: May 4th is Star Wars Day (answered 1 times, defined by Justin Ellison)
-# Lita can list all terms it knows about:
+```
+### Lita can list all terms it knows about:
+```
 [You]: Lita, what do you remember?
 [Lita]: These are all the terms I remember:
 [Lita]:  - may 4th
-# Lita can search terms:
+```
+### Lita can search terms:
+```
 [You]: Lita, search terms for May
 [Lita]: The following terms matched your query:
 [Lita]:  - may 4th
-# Lita can search definitions:
+```
+### Lita can search definitions:
+```
 [You]: Lita, search terms for Star Wars
 [Lita]: The following terms matched your query:
 [Lita]:  - may 4th
-# Lita can forget about terms:
+```
+### Lita can forget about terms:
+```
 [You]: Lita, forget about May 4th
 [Lita]: What is this May 4th you speak of? ;)
-
+```
