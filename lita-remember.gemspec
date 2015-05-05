@@ -1,12 +1,12 @@
 Gem::Specification.new do |spec|
   spec.name          = "lita-remember"
-  spec.version       = "0.0.1"
+  spec.version       = "0.0.2"
   spec.authors       = ["Justin Ellison"]
   spec.email         = ["justin@techadvise.com"]
   spec.description   = "A Lita plugin that remembers terms and definitions."
   spec.summary       = "A Lita plugin that remembers terms and definitions."
   spec.homepage      = "https://github.com/justintime/lita-remember"
-  spec.license       = "TODO: Add a license"
+  spec.license       = "MIT"
   spec.metadata      = { "lita_plugin_type" => "handler" }
 
   spec.files         = `git ls-files`.split($/)
