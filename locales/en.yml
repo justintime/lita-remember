@@ -1,0 +1,28 @@
+en:
+  lita:
+    handlers:
+      remember:
+        help:
+          what:
+            syntax: what is <term>?
+            desc: returns the definition of <term>
+          remember:
+            syntax: remember <term> is <definition>
+            desc: store the definition of <term> as <definition>
+          search:
+            syntax: search (terms|definitions) for <query>
+            desc: searches memory for your query
+          forget:
+            syntax: forget <term>
+            desc: forgets everything about <term>
+          all:
+            syntax: what do you remember?
+            desc: returns all the terms that have been memorized
+        response:
+          is: "%{term} is %{definition} (answered %{count} times, defined by %{user})"
+          unknown: "I don't know what %{term} is, type: remember %{term} is <definition> to set it.  Search for terms/definitions using: search (terms|definitions) for <string>"
+          confirm: "OK, I'll remember %{term} is %{definition}"
+          all: "These are all the terms I remember:\n - %{terms}"
+          forget: "What is this %{term} you speak of? ;)"
+          empty_search_result: "No matching %{type} found."
+          search: "The following terms matched your query:\n - %{terms}"
