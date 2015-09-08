@@ -84,6 +84,12 @@ describe Lita::Handlers::Remember, lita_handler: true do
       send_command("search terms for foo")
       expect(replies.last).to eq("No matching terms found.")
     end
+
+    it "stops term names at the first 'is'" do
+      send_command "remember it is what it is"
+      send_command "what is it"
+      expect(replies.last).to start_with("it is what it is")
+    end
   end
 
 end
