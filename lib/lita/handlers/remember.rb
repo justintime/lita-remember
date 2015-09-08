@@ -11,7 +11,7 @@ module Lita
       )
 
       route(
-        /^[Rr]emember\s(?<term>.+)\s(is|are)\s(?<definition>.+)$/,
+        /^[Rr]emember\s(?<term>.+?)\s(is|are)\s(?<definition>.+)$/,
         :remember,
         command: true,
         help: {
